@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-13T15:58:42.241Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1120459236,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Automatización de pruebas del SISTEMA DE INFORMACIÓN DE RIESGO INTEGRAL SIR",
+        "description": "",
+        "id": "sir;automatización-de-pruebas-del-sistema-de-información-de-riesgo-integral-sir;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1471461591,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Abrimos Chrome",
+            "match": {
+              "location": "main.openBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 766260337,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Ingresamos el usuario y contraseña",
+            "match": {
+              "location": "main.login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 812677923,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Seleccionamos el MÓDULO DE RIESGO DE MERCADO Y LIQUIDEZ",
+            "match": {
+              "location": "main.rMercadoLiquidez()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5721636863,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Entramos a monitor de liquidez",
+            "match": {
+              "location": "main.monitorLiquidez()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "SIR",
+    "description": "",
+    "id": "sir",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/sir.feature",
+    "tags": []
+  }
+]
