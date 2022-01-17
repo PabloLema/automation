@@ -32,4 +32,8 @@ public class Utils {
     public String getPassword() {
         return sheet().getRow(1).getCell(2).toString();
     }
+
+    public String getObservationContent() {
+        return sheet().getRow(1).getCell(3).toString();
+    }
 }

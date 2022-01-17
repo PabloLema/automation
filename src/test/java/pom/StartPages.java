@@ -21,4 +21,5 @@ public class StartPages {
     protected String url = utils.getUrl();
     protected String user = utils.getUser();
     protected String password = utils.getPassword();
+    protected String observation = utils.getObservationContent();
 }

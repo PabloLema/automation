@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-13T16:29:17.965Z",
+        "start_timestamp": "2022-01-17T14:53:11.387Z",
         "before": [
           {
             "result": {
-              "duration": 928481770,
+              "duration": 830264564,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
             }
           }
         ],
-        "line": 9,
+        "line": 15,
         "name": "Automatización de pruebas del SISTEMA DE INFORMACIÓN DE RIESGO INTEGRAL SIR",
         "description": "",
         "id": "sir;automatización-de-pruebas-del-sistema-de-información-de-riesgo-integral-sir;;2",
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1249484157,
+              "duration": 1110169967,
               "status": "passed"
             },
             "line": 3,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 957979981,
+              "duration": 803781854,
               "status": "passed"
             },
             "line": 4,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 692790345,
+              "duration": 717241341,
               "status": "passed"
             },
             "line": 5,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 8422840528,
+              "duration": 2314625845,
               "status": "passed"
             },
             "line": 6,
@@ -69,6 +69,79 @@
               "location": "main.monitorLiquidez()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1896731006,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Agregamos una odservacion",
+            "match": {
+              "location": "main.addObservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id\u003d\"mat-input-4\"] (tried for 100 second(s) with 500 milliseconds interval)\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat pom.test.Sir.consultRangeDate(Sir.java:75)\n\tat steps.init.main.consultDateRange(main.java:41)\n\tat ✽.Hacemos una consulta en el rango de fechas 1 de enero del 2019 hasta 12 de enero del 2022(file:src/test/java/features/sir.feature:8)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"mat-input-4\"]\"}\n  (Session info: chrome\u003d96.0.4664.110)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ue0100065s\u0027, ip: \u002710.17.13.67\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.4.0-91-generic\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.q42yHd}, goog:chromeOptions: {debuggerAddress: localhost:41965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 15fcd07cd00283a263f5bd7143333f50\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"mat-input-4\"]}\n\tat sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat pom.test.Sir.consultRangeDate(Sir.java:75)\n\tat steps.init.main.consultDateRange(main.java:41)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\n\tat cucumber.runner.Runner.runPickle(Runner.java:49)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\n",
+              "duration": 101327764923,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Hacemos una consulta en el rango de fechas 1 de enero del 2019 hasta 12 de enero del 2022",
+            "match": {
+              "location": "main.consultDateRange()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28664,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Descargamos las graficas",
+            "match": {
+              "location": "main.downloadGraphs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17350,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Seleccionamos la pestaña DATOS HISTORICOS",
+            "match": {
+              "location": "main.selectDataTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15489,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Descargamos los datos historicos",
+            "match": {
+              "location": "main.downloadData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14514,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Regresamos al menu principal",
+            "match": {
+              "location": "main.backMenu()"
+            },
+            "keyword": "Then "
           }
         ]
       }

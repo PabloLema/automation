@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-13T15:58:42.241Z",
+        "start_timestamp": "2022-01-17T14:44:43.876Z",
         "before": [
           {
             "result": {
-              "duration": 1120459236,
+              "duration": 838988915,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
             }
           }
         ],
-        "line": 9,
+        "line": 15,
         "name": "Automatización de pruebas del SISTEMA DE INFORMACIÓN DE RIESGO INTEGRAL SIR",
         "description": "",
         "id": "sir;automatización-de-pruebas-del-sistema-de-información-de-riesgo-integral-sir;;2",
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1471461591,
+              "duration": 1259135508,
               "status": "passed"
             },
             "line": 3,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 766260337,
+              "duration": 878722574,
               "status": "passed"
             },
             "line": 4,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 812677923,
+              "duration": 791382106,
               "status": "passed"
             },
             "line": 5,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 5721636863,
+              "duration": 2393152781,
               "status": "passed"
             },
             "line": 6,
@@ -69,6 +69,79 @@
               "location": "main.monitorLiquidez()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1039140313,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Agregamos una odservacion",
+            "match": {
+              "location": "main.addObservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cbutton _ngcontent-uvd-c232\u003d\"\" type\u003d\"button\" mat-icon-button\u003d\"\" color\u003d\"primary\" aria-label\u003d\"calendar\" class\u003d\"mat-focus-indicator mat-icon-button mat-button-base mat-primary\" ng-reflect-color\u003d\"primary\"\u003e...\u003c/button\u003e is not clickable at point (620, 307). Other element would receive the click: \u003cdiv class\u003d\"row\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d96.0.4664.110)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ue0100065s\u0027, ip: \u002710.17.13.67\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.4.0-91-generic\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.KmhLFQ}, goog:chromeOptions: {debuggerAddress: localhost:36023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: baca96db86fd77bd55dfa4ed47ac6d80\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat pom.test.Sir.consultRangeDate(Sir.java:56)\n\tat steps.init.main.consultDateRange(main.java:41)\n\tat ✽.Hacemos una consulta en el rango de fechas 1 de enero del 2019 hasta 12 de enero del 2022(file:src/test/java/features/sir.feature:8)\n",
+              "duration": 1080940165,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Hacemos una consulta en el rango de fechas 1 de enero del 2019 hasta 12 de enero del 2022",
+            "match": {
+              "location": "main.consultDateRange()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29364,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Descargamos las graficas",
+            "match": {
+              "location": "main.downloadGraphs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4558,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Seleccionamos la pestaña DATOS HISTORICOS",
+            "match": {
+              "location": "main.selectDataTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2680,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Descargamos los datos historicos",
+            "match": {
+              "location": "main.downloadData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2503,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Regresamos al menu principal",
+            "match": {
+              "location": "main.backMenu()"
+            },
+            "keyword": "Then "
           }
         ]
       }
